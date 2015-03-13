@@ -2,10 +2,9 @@ import 'style/app'
 
 import React    from 'react'
 import Router   from 'react-router'
-import Watchman from 'Watchman'
+import Watchman from 'microcosm/Watchman'
 
 let App = React.createClass({
-
   render() {
     return (
       <Watchman flux={ this.props.flux } stores={[ 'lists' ]}>

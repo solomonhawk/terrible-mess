@@ -1,8 +1,9 @@
+import Pure  from 'react-immutable-render-mixin'
 import React from 'react/addons'
 
 let Watchman = React.createClass({
 
-  mixins: [ React.addons.PureRenderMixin ],
+  mixins: [ Pure ],
 
   propTypes: {
     flux   : React.PropTypes.object.isRequired,

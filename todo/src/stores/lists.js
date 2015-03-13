@@ -5,11 +5,7 @@ import Item  from 'models/Item'
 export default class Lists extends Store {
 
   getInitialState() {
-    try {
-      return JSON.parse(localStorage.cache) || []
-    } catch(x) {
-      return []
-    }
+    return []
   }
 
   register({ lists }) {
